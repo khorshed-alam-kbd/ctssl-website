@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-
-import logo from '../../../Assets/photos/ajti-brand-logo.jpeg'
-import bannerImg from '../../../Assets/photos/travel-plane-world.jpg'
 import { FaEnvelope, FaFacebook, FaHome, FaList, FaPhoneAlt, FaTimes } from 'react-icons/fa';
+import img from '../../../Assets/photos/logo.png'
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
@@ -24,6 +22,8 @@ const Header = () => {
                         <p>comtechsbd@gmail.com</p>
                     </div>
 
+                    <img className='h-10 lg:rounded hidden block ' src={img} alt="" />
+
                     <div className='flex items-center gap-3 my-1'>
                         <div className='flex items-center gap-2'  >
                             <FaPhoneAlt />
@@ -33,7 +33,8 @@ const Header = () => {
                 </div >
             </header >
             < nav className='bg-blue-950 ' >
-                <div className="navbar  mx-auto  max-w-6xl  ">
+                <div className="navbar  mx-auto  max-w-6xl ">
+                    <img className='h-10 rounded hidden lg:flex ' src={img} alt="" />
 
                     <div className=" navbar-center hidden lg:flex mx-auto">
                         <ul className="flex items-center text-white font-semibold gap-3">
@@ -53,8 +54,8 @@ const Header = () => {
                             }
                         </div>
 
-                        <div className={isButtonClicked ? 'lg:hidden' : 'hidden'}>
-                            <ul className="text-white font-semibold gap-3">
+                        <div className={isButtonClicked ? 'lg:hidden w-[400px]' : 'hidden'}>
+                            <ul className="text-white font-semibold gap-3 ">
                                 < li > <Link to='/' className='pb-2 px-4 mb-2'>HOME</Link></li>
                                 < li > <Link to='/services' className='pb-2 px-4 mb-2'>SERVICES</Link></li>
                                 < li > <Link to='/about-us' className='pb-2 px-4 mb-2'>ABOUT US</Link></li>
