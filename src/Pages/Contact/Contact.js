@@ -18,7 +18,7 @@ const ContactUs = () => {
                 </div>
             </div> */}
       {/* contact information  */}
-      <div id="contact">
+      <div id="contact" className="">
         <div className="mx-auto px-10 bg-base-100 my-10 max-w-6xl">
           <div
             className="text-center my-8 "

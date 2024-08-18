@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="py-3 bg-blue-950 text-white hidden lg:block">
+      <header className="py-3 bg-blue-950 text-white hidden lg:block ">
         <div className="mx-auto max-w-6xl px-8 lg:px-0  flex justify-between items-center">
           <div className="flex items-center gap-2 my-1">
             <FaEnvelope />
@@ -81,7 +81,7 @@ const Header = () => {
                 </Link>
               </li>
               {/* < li > <Link to='/training' className={`hover:border-b-2  hover:border-orange-500 pb-2 px-4 mx-2 ${pathname === '/training' ? "border-b-2 border-orange-500" : ""}`}>TRANING</Link></li> */}
-              <li>
+              {/* <li>
                 {" "}
                 <Link
                   to="/contact-us"
@@ -93,7 +93,7 @@ const Header = () => {
                 >
                   CONTACT US
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -150,6 +150,9 @@ const Header = () => {
               </div>
             </div>
           </div>
+          <Link to="/contact-us" className={`flex justify-end hidden lg:block`}>
+            <button className="btn btn-sm btn-outline">Contact Us</button>
+          </Link>
         </div>
       </nav>
     </>
