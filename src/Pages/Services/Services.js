@@ -45,7 +45,7 @@ const Services = () => {
         <div className="mx-auto max-w-6xl ">
           <div className="">
             <div className="">
-              <div className="flex flex-col md:flex-row items-center justify-around lg:gap-5 mb-5 md:mb-0">
+              <div className="flex flex-col md:flex-row items-center justify-around lg:gap-5 mb-5 ">
                 <div
                   className={
                     isClickedSoft

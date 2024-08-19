@@ -7,7 +7,7 @@ import "react-multi-carousel/lib/styles.css";
 
 const clientReviews = [
   {
-    name: "Fahad Bin Bashar",
+    name: "Ayesha Khan",
     role: "Managing Director",
     review:
       "We aim to serve businesses with customer-centric, result-oriented, cost-effective, and innovative solutions that open up endless customer-engaging possibilities and drive value to global clients. We work to make our customers happy through dedication and professionalism of our team.",
@@ -15,24 +15,24 @@ const clientReviews = [
     image: userImg,
   },
   {
-    name: "Md. Khorshed Alam",
-    role: "Developer",
+    name: "Rafiq Ahmed",
+    role: "Executive",
     review:
       "We strive to provide top-notch services that cater to the unique needs of each client. Our commitment to excellence ensures that our clients receive the best possible outcomes.",
     rating: 5,
     image: userImg,
   },
   {
-    name: "Saifur Alamin",
-    role: "React Developer",
+    name: "Tanvir Islam",
+    role: "manager",
     review:
       "Our team is dedicated to delivering high-quality work that exceeds client expectations. We take pride in our ability to adapt and innovate to meet the ever-changing needs of our clients.",
     rating: 5,
     image: userImg,
   },
   {
-    name: "Md Borhan Uddin",
-    role: "MERN Stack Developer",
+    name: "Farzana Rahman",
+    role: "Director",
     review:
       "We prioritize customer satisfaction by providing reliable, efficient, and effective solutions. Our goal is to build long-term relationships with our clients based on trust and mutual respect.",
     rating: 5,
@@ -96,13 +96,13 @@ const ClientsReview = () => {
                       className="rounded-full w-16 h-16"
                     /> */}
                     <div>
-                      <p className="text-lg font-bold">{review.name}</p>
-                      <p className="text-gray-400">{review.role}</p>
                       <span className="my-2 flex gap-2">
                         {[...Array(review.rating)].map((_, i) => (
                           <FaStar key={i} className="text-yellow-500" />
                         ))}
                       </span>
+                      <p className="text-lg font-bold">{review.name}</p>
+                      <p className="text-gray-400">{review.role}</p>
                     </div>
                   </div>
                 </div>

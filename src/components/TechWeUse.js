@@ -11,11 +11,18 @@ import typescript from "../Assets/photos/FontEnd-Icon/typescript.svg";
 
 import JavaScript from "../Assets/photos/BackEnd-Icon/java-script-tech-icon.webp";
 import NodeJs from "../Assets/photos/BackEnd-Icon/nodejs-tech-icon.webp";
+import Express from "../Assets/photos/BackEnd-Icon/express.png";
 import MongoDB from "../Assets/photos/BackEnd-Icon/mongo-db-tech-icon.webp";
 import PHP from "../Assets/photos/BackEnd-Icon/php-tech-icon.webp";
 import Laravel from "../Assets/photos/BackEnd-Icon/larvel-tech-icon.webp";
+import Python from "../Assets/photos/BackEnd-Icon/phython.webp";
+// import Django from "../Assets/photos/BackEnd-Icon/django.png";
+
 import MySQL from "../Assets/photos/BackEnd-Icon/mysql-tech-icon.webp";
 import Oracle from "../Assets/photos/BackEnd-Icon/oracle.png";
+import SQLite from "../Assets/photos/BackEnd-Icon/SQLite.webp";
+import PostgreSQL from "../Assets/photos/BackEnd-Icon/Postgresql.png";
+import SQLServer from "../Assets/photos/BackEnd-Icon/sql-server.png";
 
 import ReactNative from "../Assets/photos/MobileApp-Icon/react_logo-tech-icon.webp";
 import Flutter from "../Assets/photos/MobileApp-Icon/flutter-tech-icon.webp";
@@ -43,8 +50,11 @@ const TechWeUse = () => {
   const backEndTechs = [
     { src: JavaScript, name: "JavaScript" },
     { src: NodeJs, name: "Node.js" },
+    { src: Express, name: "Express.js" },
     { src: PHP, name: "PHP" },
     { src: Laravel, name: "Laravel" },
+    { src: Python, name: "Python" },
+    // { src: Django, name: "Django" },
   ];
 
   const mobileAppTechs = [
@@ -56,6 +66,18 @@ const TechWeUse = () => {
     { src: MySQL, name: "MySQL" },
     { src: MongoDB, name: "MongoDB" },
     { src: Oracle, name: "Oracle" },
+    {
+      src: SQLServer,
+      name: "Microsoft SQL Server",
+    },
+    {
+      src: PostgreSQL,
+      name: "PostgreSQL",
+    },
+    {
+      src: SQLite,
+      name: "SQLite",
+    },
   ];
 
   const renderTechs = (techs) => {
