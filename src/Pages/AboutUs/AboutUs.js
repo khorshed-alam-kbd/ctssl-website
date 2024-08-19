@@ -8,11 +8,11 @@ import {
   FaEye,
   FaLightbulb,
 } from "react-icons/fa";
-import FahadVaiImg from "../../Assets/photos/user-photo.jpg";
+import FBBImg from "../../Assets/photos/developerImg/fahad.jpg";
 import KaImg from "../../Assets/photos/developerImg/khorshed-photo.jpg";
-import AlImg from "../../Assets/photos/user-photo.jpg";
+import AlImg from "../../Assets/photos/developerImg/alamin.png";
 import BUImg from "../../Assets/photos/developerImg/borhan.jpg";
-import MUImg from "../../Assets/photos/user-photo.jpg";
+import MUImg from "../../Assets/photos/developerImg/mayin.png";
 
 const teamMembers = [
   {
@@ -20,7 +20,7 @@ const teamMembers = [
     role: "Full Stack Developer",
     description:
       "Overseeing all technology operations and evaluating them according to the goals.",
-    image: FahadVaiImg,
+    image: FBBImg,
     socialLinks: {
       globe: "https://www.facebook.com/fahadbinbashar",
       github: "#",

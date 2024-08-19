@@ -101,7 +101,7 @@ const Clients = () => {
         <div
           className={`cursor-pointer py-2 w-[200px] border rounded ${
             activeTab === "education"
-              ? "bg-base-100"
+              ? "bg-base-100 border border-orange-400"
               : "bg-base-300 text-gray-400"
           }`}
           onClick={() => setActiveTab("education")}
@@ -111,7 +111,7 @@ const Clients = () => {
         <div
           className={`cursor-pointer py-2 w-[200px] border rounded ${
             activeTab === "insurance"
-              ? "bg-base-100"
+              ? "bg-base-100 border border-orange-400"
               : "bg-base-300 text-gray-400"
           }`}
           onClick={() => setActiveTab("insurance")}
@@ -121,7 +121,7 @@ const Clients = () => {
         <div
           className={`cursor-pointer py-2 w-[200px] border rounded ${
             activeTab === "hospital"
-              ? "bg-base-100"
+              ? "bg-base-100 border border-orange-400"
               : "bg-base-300 text-gray-400"
           }`}
           onClick={() => setActiveTab("hospital")}

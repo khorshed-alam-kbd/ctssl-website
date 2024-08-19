@@ -8,6 +8,7 @@ import OurClients from "../../components/OurClients";
 import ClientsReview from "../../components/ClientsReview";
 import TechWeUse from "../../components/TechWeUse";
 import ServiceCard from "../../components/ServiceCard";
+import WorkingProcess from "../../components/WorkingProcess";
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -99,9 +100,28 @@ const Home = () => {
         </div>
       </div>
 
+      {/* Our Clients  */}
+      <div id="our-clients">
+        <div className=" bg-base-100 py-8">
+          <div className="mx-auto px-10 max-w-7xl">
+            <div
+              className="mb-5 text-center"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-duration="1000"
+            >
+              <h1 className="text-4xl font-bold mb-2 uppercase">Our Clients</h1>
+              <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
+              {/* <p className="py-2 mx-auto max-w-4xl text-gray-600 text-justify lg:text-center">Skilled manpower is always in high demand in every company. The need of skilled workers has been becoming higher day by day around the world </p> */}
+            </div>
+            <OurClients />
+          </div>
+        </div>
+      </div>
+
       {/* Our Clients Review  */}
       <div id="our-client-review">
-        <div className=" bg-base-100 py-8">
+        <div className=" bg-base-200 py-8">
           <div className="mx-auto px-10 max-w-7xl">
             <div
               className="mb-5 text-center"
@@ -116,25 +136,6 @@ const Home = () => {
               {/* <p className="py-2 mx-auto max-w-4xl text-gray-600 text-justify lg:text-center">Skilled manpower is always in high demand in every company. The need of skilled workers has been becoming higher day by day around the world </p> */}
             </div>
             <ClientsReview />
-          </div>
-        </div>
-      </div>
-
-      {/* Our Clients  */}
-      <div id="our-clients">
-        <div className=" bg-base-200 py-8">
-          <div className="mx-auto px-10 max-w-7xl">
-            <div
-              className="mb-5 text-center"
-              data-aos="fade-up"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-duration="1000"
-            >
-              <h1 className="text-4xl font-bold mb-2 uppercase">Our Clients</h1>
-              <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
-              {/* <p className="py-2 mx-auto max-w-4xl text-gray-600 text-justify lg:text-center">Skilled manpower is always in high demand in every company. The need of skilled workers has been becoming higher day by day around the world </p> */}
-            </div>
-            <OurClients />
           </div>
         </div>
       </div>

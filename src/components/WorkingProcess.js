@@ -2,7 +2,7 @@ import React from "react";
 import "aos/dist/aos.css"; // Import AOS styles if not already imported
 
 const Step = ({ content, label }) => (
-  <li data-content={content} className="step step-primary text-xl font-bold">
+  <li data-content={content} className="step text-xl font-bold">
     {label}
   </li>
 );

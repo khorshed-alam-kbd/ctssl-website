@@ -86,7 +86,7 @@ const Services = () => {
   };
   return (
     <div id="services">
-      <div className="">
+      <div className="py-8">
         <div className="mx-auto max-w-6xl ">
           <div className="">
             <div className=" gap-5">
