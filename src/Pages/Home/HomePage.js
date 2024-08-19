@@ -101,7 +101,7 @@ const Home = () => {
 
       {/* Our Clients Review  */}
       <div id="our-client-review">
-        <div className=" bg-base-200 py-8">
+        <div className=" bg-base-100 py-8">
           <div className="mx-auto px-10 max-w-7xl">
             <div
               className="mb-5 text-center"
@@ -122,7 +122,7 @@ const Home = () => {
 
       {/* Our Clients  */}
       <div id="our-clients">
-        <div className=" bg-base-100 py-8">
+        <div className=" bg-base-200 py-8">
           <div className="mx-auto px-10 max-w-7xl">
             <div
               className="mb-5 text-center"
