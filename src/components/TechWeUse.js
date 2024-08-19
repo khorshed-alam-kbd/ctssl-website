@@ -15,9 +15,11 @@ import MongoDB from "../Assets/photos/BackEnd-Icon/mongo-db-tech-icon.webp";
 import PHP from "../Assets/photos/BackEnd-Icon/php-tech-icon.webp";
 import Laravel from "../Assets/photos/BackEnd-Icon/larvel-tech-icon.webp";
 import MySQL from "../Assets/photos/BackEnd-Icon/mysql-tech-icon.webp";
+import Oracle from "../Assets/photos/BackEnd-Icon/oracle.png";
 
 import ReactNative from "../Assets/photos/MobileApp-Icon/react_logo-tech-icon.webp";
 import Flutter from "../Assets/photos/MobileApp-Icon/flutter-tech-icon.webp";
+import Android from "../Assets/photos/MobileApp-Icon/adnroid.png";
 
 const TechWeUse = () => {
   const [activeTab, setActiveTab] = useState("FE");
@@ -46,12 +48,14 @@ const TechWeUse = () => {
   ];
 
   const mobileAppTechs = [
+    { src: Android, name: "Android" },
     { src: ReactNative, name: "React Native" },
     { src: Flutter, name: "Flutter" },
   ];
   const databaseTechs = [
     { src: MySQL, name: "MySQL" },
     { src: MongoDB, name: "MongoDB" },
+    { src: Oracle, name: "Oracle" },
   ];
 
   const renderTechs = (techs) => {

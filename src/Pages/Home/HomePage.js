@@ -130,7 +130,7 @@ const Home = () => {
               data-aos-duration="1000"
             >
               <h1 className="text-4xl font-bold mb-2 uppercase">
-                Our Client Reviews
+                Client Reviews
               </h1>
               <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
               {/* <p className="py-2 mx-auto max-w-4xl text-gray-600 text-justify lg:text-center">Skilled manpower is always in high demand in every company. The need of skilled workers has been becoming higher day by day around the world </p> */}
