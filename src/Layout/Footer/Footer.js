@@ -39,9 +39,14 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-2 my-1 ">
               <FaPhoneAlt className="" />
-              <p className="text-sm font-semibold text-blue-900">
-                +8801620658621
-              </p>
+              <div>
+                <p className="text-sm font-semibold text-blue-900">
+                  +8801987851923
+                </p>
+                <p className="text-sm font-semibold text-blue-900">
+                  +8801620658621
+                </p>
+              </div>
             </div>
 
             {/* <div className="lg:flex gap-5 mt-4 hidden">

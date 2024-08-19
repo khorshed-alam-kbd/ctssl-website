@@ -31,7 +31,10 @@ const Header = () => {
           <div className="flex items-center gap-3 my-1">
             <div className="flex items-center gap-2">
               <FaPhoneAlt />
-              <p className="text-md">+8801620658621</p>
+              <div>
+                <p className="text-md">+8801987851923</p>
+                <p className="text-md">+8801620658621</p>
+              </div>
             </div>
           </div>
         </div>
@@ -160,7 +163,7 @@ const Header = () => {
 
             <div className="lg:hidden">
               <div className="flex items-center text-blue-950 font-semibold gap-3  ">
-                <a href="tel:+8801620658621">
+                <a href="tel:+8801987851923">
                   <FaPhoneAlt />
                 </a>
                 <a href="mailto:>comtechsbd@gmail.com">
