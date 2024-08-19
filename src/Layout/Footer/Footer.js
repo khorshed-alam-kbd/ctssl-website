@@ -11,7 +11,7 @@ import {
   FaMapMarkedAlt,
 } from "react-icons/fa";
 
-import img from "../../../Assets/photos/logo.png";
+import img from "../../Assets/photos/logo.png";
 
 const Footer = () => {
   return (
@@ -20,7 +20,7 @@ const Footer = () => {
         <footer className="mx-auto max-w-6xl px-8 lg:px-0 py-10 text-blue-950 lg:flex justify-between ">
           <div className="py-2">
             <div className="lg:flex items-center gap-2">
-              <img className="h-[60px]" src={img} alt="" />
+              <img className="h-[40px] mb-2" src={img} alt="" />
               {/* <h1 className="text-xl lg:text-3xl font-bold text-uppercase py-2">
                 Comtech Software Solution Ltd
               </h1> */}
@@ -44,14 +44,14 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className="lg:flex gap-5 mt-4 hidden">
+            {/* <div className="lg:flex gap-5 mt-4 hidden">
               <a href="" target="_blank" rel="noopener noreferrer">
                 <FaFacebook />
               </a>
               <FaTwitter />
               <FaWhatsapp />
               <FaYoutube />
-            </div>
+            </div> */}
           </div>
 
           <div className="grid py-2 text-sm">
@@ -91,14 +91,14 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="flex gap-5 mt-4 lg:hidden">
+          {/* <div className="flex gap-5 mt-4 lg:hidden">
             <a href="" target="_blank" rel="noopener noreferrer">
               <FaFacebook />
             </a>
             <FaTwitter />
             <FaWhatsapp />
             <FaYoutube />
-          </div>
+          </div> */}
         </footer>
       </div>
       <footer className="footer footer-center p-4 bg-blue-950 text-slate-300 ">

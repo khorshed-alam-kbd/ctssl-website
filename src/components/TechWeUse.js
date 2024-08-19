@@ -67,12 +67,14 @@ const TechWeUse = () => {
   };
 
   return (
-    <div className="mx-auto max-w-6xl px-10">
+    <div className="mx-auto px-10">
       <div className="bg-base-100 ">
-        <div className="flex justify-center gap-5 mb-10">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-5 mb-10">
           <div
             className={`cursor-pointer py-2 w-[150px] border rounded ${
-              activeTab === "FE" ? "bg-base-100" : "bg-base-300 text-gray-400"
+              activeTab === "FE"
+                ? "bg-base-100 border border-orange-400"
+                : "bg-base-300 text-gray-400"
             }`}
             onClick={() => handleTabClick("FE")}
           >
@@ -80,7 +82,9 @@ const TechWeUse = () => {
           </div>
           <div
             className={`cursor-pointer py-2 w-[150px] border rounded ${
-              activeTab === "BE" ? "bg-base-100" : "bg-base-300 text-gray-400"
+              activeTab === "BE"
+                ? "bg-base-100 border border-orange-400"
+                : "bg-base-300 text-gray-400"
             }`}
             onClick={() => handleTabClick("BE")}
           >
@@ -88,7 +92,9 @@ const TechWeUse = () => {
           </div>
           <div
             className={`cursor-pointer py-2 w-[150px] border rounded ${
-              activeTab === "MA" ? "bg-base-100" : "bg-base-300 text-gray-400"
+              activeTab === "MA"
+                ? "bg-base-100 border border-orange-400"
+                : "bg-base-300 text-gray-400"
             }`}
             onClick={() => handleTabClick("MA")}
           >

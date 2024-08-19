@@ -3,12 +3,11 @@ import React, { useEffect, useState } from "react";
 import { FaAngleDoubleUp, FaRandom, FaStar } from "react-icons/fa";
 
 import { animateScroll as scroll } from "react-scroll";
-import { useInView } from "react-intersection-observer";
 import HomeBanner from "../../components/HomeBanner";
-import Services from "../Services/Services";
 import OurClients from "../../components/OurClients";
 import ClientsReview from "../../components/ClientsReview";
 import TechWeUse from "../../components/TechWeUse";
+import ServiceCard from "../../components/ServiceCard";
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -53,10 +52,8 @@ const Home = () => {
             >
               <h1 className="text-4xl font-bold mb-2">OUR SERVICES</h1>
               <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
-              {/* <p className="py-2 mx-auto max-w-4xl text-gray-600 text-justify lg:text-center">A Jharna Trade International is the best place solutions to recruiters & candidates.
-                            </p> */}
             </div>
-            <Services />
+            <ServiceCard />
           </div>
         </div>
       </div>
@@ -71,9 +68,33 @@ const Home = () => {
             >
               <h1 className="text-4xl font-bold mb-2 uppercase">Tech Stack</h1>
               <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
-              {/* <p className="py-2 mx-auto max-w-4xl text-gray-600 text-justify lg:text-center">Skilled manpower is always in high demand in every company. The need of skilled workers has been becoming higher day by day around the world </p> */}
             </div>
             <TechWeUse />
+          </div>
+        </div>
+      </div>
+
+      {/* Our working steps   */}
+      <div id="our-working-steps">
+        <div className=" bg-base-200 py-8">
+          <div className="mx-auto px-10 max-w-7xl">
+            <div
+              className="mb-5 text-center"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-duration="1000"
+            >
+              <h1 className="text-4xl font-bold mb-2 uppercase">
+                Our Working Process
+              </h1>
+              <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
+              <p className="py-2 mx-auto max-w-4xl text-gray-600 text-justify lg:text-center">
+                We’ll start your project by reviewing your needs and
+                expectations. We’ll then recommend the right approach, the
+                budget, the growth to expect and timeline for the project.
+              </p>
+            </div>
+            <WorkingProcess />
           </div>
         </div>
       </div>
@@ -117,7 +138,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* Our Clients Review  */}
 
       {/* Scroll to top  */}
 

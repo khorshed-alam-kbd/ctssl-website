@@ -79,25 +79,28 @@ const ClientsReview = () => {
               className="pb-8"
             >
               {clientReviews.map((review, index) => (
-                <div key={index} className="bg-base-100 p-5 border mx-2 h-full">
-                  <div className="flex my-5 text-justify">
+                <div
+                  key={index}
+                  className="bg-base-100 p-5 border mx-2 md:h-full"
+                >
+                  <div className="md:flex my-5 text-justify">
                     <span>
                       <FaQuoteLeft className="text-xl mr-3" />
                     </span>
                     <p className="text-gray-400">{review.review}</p>
                   </div>
-                  <div className="md:flex items-center gap-4">
-                    <img
+                  <div className="md:flex items-center justify-end gap-4">
+                    {/* <img
                       src={review.image}
                       alt={review.name}
                       className="rounded-full w-16 h-16"
-                    />
+                    /> */}
                     <div>
-                      <p className="text-xl font-bold">{review.name}</p>
+                      <p className="text-lg font-bold">{review.name}</p>
                       <p className="text-gray-400">{review.role}</p>
                       <span className="my-2 flex gap-2">
                         {[...Array(review.rating)].map((_, i) => (
-                          <FaStar key={i} />
+                          <FaStar key={i} className="text-yellow-500" />
                         ))}
                       </span>
                     </div>

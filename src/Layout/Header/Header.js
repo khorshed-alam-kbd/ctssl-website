@@ -7,7 +7,7 @@ import {
   FaPhoneAlt,
   FaTimes,
 } from "react-icons/fa";
-import img from "../../../Assets/photos/logo.png";
+import img from "../../Assets/photos/logo.png";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
@@ -70,6 +70,19 @@ const Header = () => {
               <li>
                 {" "}
                 <Link
+                  to="/clients"
+                  className={`hover:border-b-2  hover:border-orange-500 pb-2 px-4 mx-2 ${
+                    pathname === "/clients"
+                      ? "border-b-2 border-orange-500"
+                      : ""
+                  }`}
+                >
+                  CLIENTS
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link
                   to="/about-us"
                   className={`hover:border-b-2  hover:border-orange-500 pb-2 px-4 mx-2 ${
                     pathname === "/about-us"
@@ -106,7 +119,7 @@ const Header = () => {
             </div>
 
             <div className={!isButtonClicked ? "lg:hidden" : "hidden"}>
-              <img className="h-10" src={img} alt="" />
+              <img className="h-7" src={img} alt="" />
             </div>
 
             <div className={isButtonClicked ? "lg:hidden w-[400px]" : "hidden"}>
@@ -121,6 +134,12 @@ const Header = () => {
                   {" "}
                   <Link to="/services" className="pb-2 px-4 mb-2">
                     SERVICES
+                  </Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link to="/clients" className="pb-2 px-4 mb-2">
+                    CLIENTS
                   </Link>
                 </li>
                 <li>
