@@ -41,10 +41,10 @@ const Footer = () => {
               <FaPhoneAlt className="" />
               <div>
                 <p className="text-sm font-semibold text-blue-900">
-                  +8801987851923
+                  +880 1987 851923
                 </p>
                 <p className="text-sm font-semibold text-blue-900">
-                  +8801620658621
+                  +880 1620 658621
                 </p>
               </div>
             </div>

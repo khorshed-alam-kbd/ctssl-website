@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="py-3 bg-blue-950 text-white hidden lg:block ">
+      <header className="py-3 bg-blue-950 text-white hidden lg:block z-[1000] ">
         <div className="mx-auto max-w-6xl px-8 lg:px-0  flex justify-between items-center">
           <div className="flex items-center gap-2 my-1">
             <FaEnvelope />
@@ -32,8 +32,8 @@ const Header = () => {
             <div className="flex items-center gap-2">
               <FaPhoneAlt />
               <div>
-                <p className="text-md">+8801987851923</p>
-                <p className="text-md">+8801620658621</p>
+                <p className="text-md">+880 1987 851923</p>
+                <p className="text-md">+880 1620 658621</p>
               </div>
             </div>
           </div>

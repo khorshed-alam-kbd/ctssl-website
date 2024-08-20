@@ -27,6 +27,7 @@ import SQLServer from "../Assets/photos/BackEnd-Icon/sql-server.png";
 import ReactNative from "../Assets/photos/MobileApp-Icon/react_logo-tech-icon.webp";
 import Flutter from "../Assets/photos/MobileApp-Icon/flutter-tech-icon.webp";
 import Android from "../Assets/photos/MobileApp-Icon/adnroid.png";
+import Java from "../Assets/photos/MobileApp-Icon/java.png";
 
 const TechWeUse = () => {
   const [activeTab, setActiveTab] = useState("FE");
@@ -60,24 +61,16 @@ const TechWeUse = () => {
   const mobileAppTechs = [
     { src: Android, name: "Android" },
     { src: ReactNative, name: "React Native" },
+    { src: Java, name: "Java" },
     { src: Flutter, name: "Flutter" },
   ];
   const databaseTechs = [
     { src: MySQL, name: "MySQL" },
     { src: MongoDB, name: "MongoDB" },
     { src: Oracle, name: "Oracle" },
-    {
-      src: SQLServer,
-      name: "Microsoft SQL Server",
-    },
-    {
-      src: PostgreSQL,
-      name: "PostgreSQL",
-    },
-    {
-      src: SQLite,
-      name: "SQLite",
-    },
+    { src: SQLServer, name: "Microsoft SQL Server" },
+    { src: PostgreSQL, name: "PostgreSQL" },
+    { src: SQLite, name: "SQLite" },
   ];
 
   const renderTechs = (techs) => {
@@ -93,9 +86,9 @@ const TechWeUse = () => {
   };
 
   return (
-    <div className="mx-auto px-10">
+    <div className="mx-auto">
       <div className="bg-base-100 ">
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-5 mb-10">
+        <div className="grid grid grid-cols-2 lg:grid-cols-4 justify-items-center gap-5 mb-10">
           <div
             className={`cursor-pointer py-2 w-[150px] border rounded ${
               activeTab === "FE"
@@ -128,7 +121,9 @@ const TechWeUse = () => {
           </div>
           <div
             className={`cursor-pointer py-2 w-[150px] border rounded ${
-              activeTab === "DB" ? "bg-base-100" : "bg-base-300 text-gray-400"
+              activeTab === "DB"
+                ? "bg-base-100 border border-orange-400"
+                : "bg-base-300 text-gray-400"
             }`}
             onClick={() => handleTabClick("DB")}
           >
@@ -138,24 +133,24 @@ const TechWeUse = () => {
 
         <div className="mx-auto">
           {activeTab === "FE" && (
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
               {renderTechs(frontEndTechs)}
             </div>
           )}
 
           {activeTab === "BE" && (
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
               {renderTechs(backEndTechs)}
             </div>
           )}
 
           {activeTab === "MA" && (
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
               {renderTechs(mobileAppTechs)}
             </div>
           )}
           {activeTab === "DB" && (
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
               {renderTechs(databaseTechs)}
             </div>
           )}

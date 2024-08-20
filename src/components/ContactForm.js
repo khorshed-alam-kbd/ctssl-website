@@ -130,8 +130,8 @@ const ContactForm = () => {
           <div className="flex items-center gap-2 my-1">
             <FaPhoneAlt />
             <div>
-              <p>+8801987851923</p>
-              <p>+8801620658621</p>
+              <p>+880 1987 851923</p>
+              <p>+880 1620 658621</p>
             </div>
           </div>
         </div>

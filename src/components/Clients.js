@@ -96,7 +96,7 @@ const Clients = () => {
   };
 
   return (
-    <div className="">
+    <div className="max-w-7xl px-5">
       <div className="flex flex-col lg:flex-row items-center justify-center gap-5">
         <div
           className={`cursor-pointer py-2 w-[200px] border rounded ${

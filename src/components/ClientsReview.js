@@ -59,13 +59,13 @@ const ClientsReview = () => {
   return (
     <div>
       <div className="">
-        <div className="mx-auto px-10">
+        <div className="mx-auto">
           <div className="text-center">
             {/* <h1 className='mx-auto text-4xl font-bold my-3'>Our Clients Simply Love Our Work</h1> */}
-            <p className="text-gray-400">
+            {/* <p className="text-gray-400">
               Our services are appreciated by our clients from all across the
               globe for high quality and impressive results.
-            </p>
+            </p> */}
           </div>
 
           <div className="my-5">

@@ -103,7 +103,7 @@ const Home = () => {
       {/* Our Clients  */}
       <div id="our-clients">
         <div className=" bg-base-100 py-8">
-          <div className="mx-auto px-10 max-w-7xl">
+          <div className="mx-auto max-w-7xl">
             <div
               className="mb-5 text-center"
               data-aos="fade-up"

@@ -24,7 +24,7 @@ const HomeBanner = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[400px]  overflow-hidden">
+    <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px]">
       <div
         className="absolute top-0 left-0 w-full h-full flex transition-transform duration-1000"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -40,7 +40,7 @@ const HomeBanner = () => {
         ))}
       </div>
 
-      <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <div className="absolute left-3 right-3 top-1/2 flex -translate-y-1/2 transform justify-between">
         <button
           onClick={prevSlide}
           className="btn btn-circle bg-black bg-opacity-50 text-white"

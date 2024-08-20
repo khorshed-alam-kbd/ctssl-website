@@ -1,13 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-import bannerImg from "../../Assets/photos/services-banner.jpg";
-import ServiceCard from "../../components/ServiceCard";
-import { FaFileCode } from "react-icons/fa";
-import { AiOutlineDesktop } from "react-icons/ai";
-import { BsBarChart } from "react-icons/bs";
-import { MdOutlineDeveloperMode } from "react-icons/md";
-import { SiAltiumdesigner, SiMicrosoftsharepoint } from "react-icons/si";
-
 import AppDev from "../../components/AppDev";
 import WebDev from "../../components/WebDev";
 import SoftDev from "../../components/SoftDev";
