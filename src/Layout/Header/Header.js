@@ -50,8 +50,8 @@ const Header = () => {
                 {" "}
                 <Link
                   to="/"
-                  className={`hover:border-b-2  hover:border-orange-500 pb-2 px-4 mx-2 ${
-                    pathname === "/" ? "border-b-2 border-orange-500" : ""
+                  className={`hover:border-b-2  hover:border-blue-700 pb-2 px-4 mx-2 ${
+                    pathname === "/" ? "border-b-2 border-blue-700" : ""
                   }`}
                 >
                   HOME
@@ -61,10 +61,8 @@ const Header = () => {
                 {" "}
                 <Link
                   to="/services"
-                  className={`hover:border-b-2  hover:border-orange-500 pb-2 px-4 mx-2 ${
-                    pathname === "/services"
-                      ? "border-b-2 border-orange-500"
-                      : ""
+                  className={`hover:border-b-2  hover:border-blue-700 pb-2 px-4 mx-2 ${
+                    pathname === "/services" ? "border-b-2 border-blue-700" : ""
                   }`}
                 >
                   SERVICES
@@ -74,10 +72,8 @@ const Header = () => {
                 {" "}
                 <Link
                   to="/clients"
-                  className={`hover:border-b-2  hover:border-orange-500 pb-2 px-4 mx-2 ${
-                    pathname === "/clients"
-                      ? "border-b-2 border-orange-500"
-                      : ""
+                  className={`hover:border-b-2  hover:border-blue-700 pb-2 px-4 mx-2 ${
+                    pathname === "/clients" ? "border-b-2 border-blue-700" : ""
                   }`}
                 >
                   CLIENTS
@@ -87,23 +83,21 @@ const Header = () => {
                 {" "}
                 <Link
                   to="/about-us"
-                  className={`hover:border-b-2  hover:border-orange-500 pb-2 px-4 mx-2 ${
-                    pathname === "/about-us"
-                      ? "border-b-2 border-orange-500"
-                      : ""
+                  className={`hover:border-b-2  hover:border-blue-700 pb-2 px-4 mx-2 ${
+                    pathname === "/about-us" ? "border-b-2 border-blue-700" : ""
                   }`}
                 >
                   ABOUT US
                 </Link>
               </li>
-              {/* < li > <Link to='/training' className={`hover:border-b-2  hover:border-orange-500 pb-2 px-4 mx-2 ${pathname === '/training' ? "border-b-2 border-orange-500" : ""}`}>TRANING</Link></li> */}
+              {/* < li > <Link to='/training' className={`hover:border-b-2  hover:border-blue-700 pb-2 px-4 mx-2 ${pathname === '/training' ? "border-b-2 border-blue-700" : ""}`}>TRANING</Link></li> */}
               {/* <li>
                 {" "}
                 <Link
                   to="/contact-us"
-                  className={`hover:border-b-2  hover:border-orange-500 pb-2 px-4 mx-2 ${
+                  className={`hover:border-b-2  hover:border-blue-700 pb-2 px-4 mx-2 ${
                     pathname === "/contact-us"
-                      ? "border-b-2 border-orange-500"
+                      ? "border-b-2 border-blue-700"
                       : ""
                   }`}
                 >

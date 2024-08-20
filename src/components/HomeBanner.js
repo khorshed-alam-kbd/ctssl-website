@@ -7,7 +7,7 @@ import img5 from "../Assets/photos/banner/banner5.jpg";
 
 const HomeBanner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = [img4, img2, img3, img5];
+  const slides = [img1, img2, img3];
   const totalSlides = slides.length;
 
   const nextSlide = () => {
@@ -24,7 +24,7 @@ const HomeBanner = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px]">
+    <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[450px]">
       <div
         className="absolute top-0 left-0 w-full h-full flex transition-transform duration-1000"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}

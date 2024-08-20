@@ -151,7 +151,7 @@ const GalleryDetails = () => {
             data-aos-duration="1000"
           >
             <h1 className="text-2xl font-bold mb-2 uppercase">Office</h1>
-            <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
+            <hr className="w-24 h-1 mx-auto text-xl bg-blue-700 rounded" />
           </div>
           <div className="mx-auto bg-base-100 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-2 p-2">
             <PhotoProvider>
@@ -173,7 +173,7 @@ const GalleryDetails = () => {
             data-aos-duration="1000"
           >
             <h1 className="text-2xl font-bold mb-2 uppercase">Archviement </h1>
-            <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
+            <hr className="w-24 h-1 mx-auto text-xl bg-blue-700 rounded" />
           </div>
           <div className="mx-auto bg-base-200 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-2 p-2">
             <PhotoProvider>
@@ -195,7 +195,7 @@ const GalleryDetails = () => {
             data-aos-duration="1000"
           >
             <h1 className="text-2xl font-bold mb-2 uppercase">Travailing</h1>
-            <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
+            <hr className="w-24 h-1 mx-auto text-xl bg-blue-700 rounded" />
           </div>
           <div className="mx-auto bg-base-100 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-2 p-2">
             <PhotoProvider>
@@ -217,7 +217,7 @@ const GalleryDetails = () => {
             data-aos-duration="1000"
           >
             <h1 className="text-2xl font-bold mb-2 uppercase">Recruitment</h1>
-            <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
+            <hr className="w-24 h-1 mx-auto text-xl bg-blue-700 rounded" />
           </div>
           <div className="mx-auto bg-base-200 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-2 p-2">
             <PhotoProvider>

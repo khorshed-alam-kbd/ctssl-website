@@ -52,7 +52,7 @@ const Home = () => {
               data-aos-duration="1000"
             >
               <h1 className="text-4xl font-bold mb-2">OUR SERVICES</h1>
-              <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
+              <hr className="w-24 h-1 mx-auto text-xl bg-blue-700 rounded" />
             </div>
             <ServiceCard />
           </div>
@@ -68,7 +68,7 @@ const Home = () => {
               data-aos-duration="1000"
             >
               <h1 className="text-4xl font-bold mb-2 uppercase">Tech Stack</h1>
-              <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
+              <hr className="w-24 h-1 mx-auto text-xl bg-blue-700 rounded" />
             </div>
             <TechWeUse />
           </div>
@@ -88,7 +88,7 @@ const Home = () => {
               <h1 className="text-4xl font-bold mb-2 uppercase">
                 Our Working Process
               </h1>
-              <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
+              <hr className="w-24 h-1 mx-auto text-xl bg-blue-700 rounded" />
               <p className="py-2 mx-auto max-w-4xl text-gray-600 text-justify lg:text-center">
                 We’ll start your project by reviewing your needs and
                 expectations. We’ll then recommend the right approach, the
@@ -111,7 +111,7 @@ const Home = () => {
               data-aos-duration="1000"
             >
               <h1 className="text-4xl font-bold mb-2 uppercase">Our Clients</h1>
-              <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
+              <hr className="w-24 h-1 mx-auto text-xl bg-blue-700 rounded" />
               {/* <p className="py-2 mx-auto max-w-4xl text-gray-600 text-justify lg:text-center">Skilled manpower is always in high demand in every company. The need of skilled workers has been becoming higher day by day around the world </p> */}
             </div>
             <OurClients />
@@ -132,7 +132,7 @@ const Home = () => {
               <h1 className="text-4xl font-bold mb-2 uppercase">
                 Client Reviews
               </h1>
-              <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
+              <hr className="w-24 h-1 mx-auto text-xl bg-blue-700 rounded" />
               {/* <p className="py-2 mx-auto max-w-4xl text-gray-600 text-justify lg:text-center">Skilled manpower is always in high demand in every company. The need of skilled workers has been becoming higher day by day around the world </p> */}
             </div>
             <ClientsReview />

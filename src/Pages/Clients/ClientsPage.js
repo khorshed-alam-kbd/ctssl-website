@@ -13,7 +13,7 @@ const ClientsPage = () => {
             data-aos-duration="1000"
           >
             <h1 className="text-2xl font-bold mb-2 uppercase">Our Clients</h1>
-            <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
+            <hr className="w-24 h-1 mx-auto text-xl bg-blue-700 rounded" />
           </div> */}
 
           <Clients />

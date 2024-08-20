@@ -51,7 +51,7 @@ const AboutUs = () => {
             <h1 className="text-2xl font-bold mb-2 uppercase">
               The Foundation of Our Company
             </h1>
-            <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
+            <hr className="w-24 h-1 mx-auto text-xl bg-blue-700 rounded" />
             <p className="py-2 mx-auto max-w-5xl text-gray-600 text-justify lg:text-center">
               We empower our people with the right mindsets and skills to
               navigate what’s next, become the transformative leaders the world
@@ -94,7 +94,7 @@ const AboutUs = () => {
             <h1 className="text-2xl font-bold mb-2 uppercase">
               Our Team Members
             </h1>
-            <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
+            <hr className="w-24 h-1 mx-auto text-xl bg-blue-700 rounded" />
             <p className="py-2 mx-auto max-w-5xl text-gray-600 text-justify lg:text-center">
               The ability to invite, leverage, and learn from different
               perspectives is key to delivering for our clients. We believe

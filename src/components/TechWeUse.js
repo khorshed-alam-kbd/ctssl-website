@@ -7,6 +7,7 @@ import tailwind from "../Assets/photos/FontEnd-Icon/tailwind-css-tech-icon.webp"
 import mui from "../Assets/photos/FontEnd-Icon/material-ui-tech-icon.webp";
 import react from "../Assets/photos/FontEnd-Icon/react-js-tech-icon.svg";
 import next from "../Assets/photos/FontEnd-Icon/next-js-tech-icon.webp";
+import vite from "../Assets/photos/FontEnd-Icon/vite.png";
 import typescript from "../Assets/photos/FontEnd-Icon/typescript.svg";
 
 import JavaScript from "../Assets/photos/BackEnd-Icon/java-script-tech-icon.webp";
@@ -23,11 +24,14 @@ import Oracle from "../Assets/photos/BackEnd-Icon/oracle.png";
 import SQLite from "../Assets/photos/BackEnd-Icon/SQLite.webp";
 import PostgreSQL from "../Assets/photos/BackEnd-Icon/Postgresql.png";
 import SQLServer from "../Assets/photos/BackEnd-Icon/sql-server.png";
+import RoomDB from "../Assets/photos/DB-Icon/room-db.svg";
+import Redis from "../Assets/photos/DB-Icon/Redis.webp";
 
 import ReactNative from "../Assets/photos/MobileApp-Icon/react_logo-tech-icon.webp";
 import Flutter from "../Assets/photos/MobileApp-Icon/flutter-tech-icon.webp";
 import Android from "../Assets/photos/MobileApp-Icon/adnroid.png";
 import Java from "../Assets/photos/MobileApp-Icon/java.png";
+import FireBase from "../Assets/photos/MobileApp-Icon/firebase.png";
 
 const TechWeUse = () => {
   const [activeTab, setActiveTab] = useState("FE");
@@ -39,6 +43,7 @@ const TechWeUse = () => {
   const frontEndTechs = [
     { src: react, name: "React.js" },
     { src: next, name: "Next.js" },
+    { src: vite, name: "Vite.js" },
     { src: JavaScript, name: "JavaScript" },
     { src: typescript, name: "TypeScript" },
     { src: html, name: "HTML 5" },
@@ -59,18 +64,21 @@ const TechWeUse = () => {
   ];
 
   const mobileAppTechs = [
-    { src: Android, name: "Android" },
-    { src: ReactNative, name: "React Native" },
+    { src: Android, name: "Android Studio" },
+    // { src: ReactNative, name: "React Native" },
     { src: Java, name: "Java" },
     { src: Flutter, name: "Flutter" },
+    { src: FireBase, name: "Fire Base" },
   ];
   const databaseTechs = [
     { src: MySQL, name: "MySQL" },
     { src: MongoDB, name: "MongoDB" },
     { src: Oracle, name: "Oracle" },
-    { src: SQLServer, name: "Microsoft SQL Server" },
+    { src: SQLServer, name: "MS SQL Server" },
     { src: PostgreSQL, name: "PostgreSQL" },
     { src: SQLite, name: "SQLite" },
+    { src: Redis, name: "Redis DB" },
+    { src: RoomDB, name: "Room DB" },
   ];
 
   const renderTechs = (techs) => {
@@ -92,7 +100,7 @@ const TechWeUse = () => {
           <div
             className={`cursor-pointer py-2 w-[150px] border rounded ${
               activeTab === "FE"
-                ? "bg-base-100 border border-orange-400"
+                ? "bg-base-100 border border-blue-700"
                 : "bg-base-300 text-gray-400"
             }`}
             onClick={() => handleTabClick("FE")}
@@ -102,7 +110,7 @@ const TechWeUse = () => {
           <div
             className={`cursor-pointer py-2 w-[150px] border rounded ${
               activeTab === "BE"
-                ? "bg-base-100 border border-orange-400"
+                ? "bg-base-100 border border-blue-700"
                 : "bg-base-300 text-gray-400"
             }`}
             onClick={() => handleTabClick("BE")}
@@ -112,7 +120,7 @@ const TechWeUse = () => {
           <div
             className={`cursor-pointer py-2 w-[150px] border rounded ${
               activeTab === "MA"
-                ? "bg-base-100 border border-orange-400"
+                ? "bg-base-100 border border-blue-700"
                 : "bg-base-300 text-gray-400"
             }`}
             onClick={() => handleTabClick("MA")}
@@ -122,7 +130,7 @@ const TechWeUse = () => {
           <div
             className={`cursor-pointer py-2 w-[150px] border rounded ${
               activeTab === "DB"
-                ? "bg-base-100 border border-orange-400"
+                ? "bg-base-100 border border-blue-700"
                 : "bg-base-300 text-gray-400"
             }`}
             onClick={() => handleTabClick("DB")}

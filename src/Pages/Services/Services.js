@@ -41,7 +41,7 @@ const Services = () => {
                 <div
                   className={
                     isClickedSoft
-                      ? "p-3 border-b-2 border-orange-500"
+                      ? "p-3 border-b-2 border-blue-700"
                       : "text-gray-400 p-3"
                   }
                   onClick={() => handleClick("SWD")}
@@ -51,7 +51,7 @@ const Services = () => {
                 <div
                   className={
                     isClickedWEB
-                      ? "p-3 border-b-2 border-orange-500"
+                      ? "p-3 border-b-2 border-blue-700"
                       : "text-gray-400 p-3"
                   }
                   onClick={() => handleClick("WEB")}
@@ -61,7 +61,7 @@ const Services = () => {
                 <div
                   className={
                     isClickedAPP
-                      ? "p-3 border-b-2 border-orange-500"
+                      ? "p-3 border-b-2 border-blue-700"
                       : "text-gray-400 p-3"
                   }
                   onClick={() => handleClick("APP")}
@@ -98,7 +98,7 @@ const Services = () => {
               <h1 className="text-2xl font-bold mb-2 uppercase">
                 Tech Stack We Used
               </h1>
-              <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
+              <hr className="w-24 h-1 mx-auto text-xl bg-blue-700 rounded" />
             </div>
             <TechWeUse />
           </div>

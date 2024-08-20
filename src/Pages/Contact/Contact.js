@@ -27,7 +27,7 @@ const ContactUs = () => {
             data-aos-duration="1000"
           >
             <h1 className="text-4xl font-bold mb-2">LET'S TALK</h1>
-            <hr className="w-24 h-1 mx-auto text-xl bg-orange-400 rounded" />
+            <hr className="w-24 h-1 mx-auto text-xl bg-blue-700 rounded" />
             <p className="pt-2 max-w-4xl mx-auto text-gray-600 text-justify lg:text-center">
               Let's Get in Touch ! Have a Query ? Send Us a Message
             </p>
