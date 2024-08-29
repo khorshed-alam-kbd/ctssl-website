@@ -10,42 +10,42 @@ const serviceData = [
     title: "Enterprise Application Development",
     desc: "Premier and customized business applications and e-commerce solutions development services that safeguard organizational value, performance, and profitability.",
     icon: (
-      <FaFileCode className="w-12 md:w-16 h-12 md:h-16 text-red-500 relative left-[45%] lg:left-[44%] top-4" />
+      <FaFileCode className="w-12 md:w-16 h-12 md:h-16 text-blue-900 relative left-[45%] lg:left-[44%] top-4" />
     ),
   },
   {
     title: "Web & Mobile Application Development",
     desc: "Extensible web and mobile application development for specific business needs with powerful functionality to retain more clients or optimize internal processes.",
     icon: (
-      <AiOutlineDesktop className="w-12 md:w-16 h-12 md:h-16 text-red-500 relative left-[45%] lg:left-[44%] top-4" />
+      <AiOutlineDesktop className="w-12 md:w-16 h-12 md:h-16 text-blue-900 relative left-[45%] lg:left-[44%] top-4" />
     ),
   },
   {
     title: "Business Intelligence & Data Mining",
     desc: "Result-driven business intelligence by implementing ETL powered with data quality management and rich visualization.",
     icon: (
-      <BsBarChart className="w-12 md:w-16 h-12 md:h-16 text-red-500 relative left-[45%] lg:left-[44%] top-4" />
+      <BsBarChart className="w-12 md:w-16 h-12 md:h-16 text-blue-900 relative left-[45%] lg:left-[44%] top-4" />
     ),
   },
   {
     title: "Azure Application Development",
     desc: "Azure application development and migration Services that ensures clean cloud experience.",
     icon: (
-      <MdOutlineDeveloperMode className="w-12 md:w-16 h-12 md:h-16 text-red-500 relative left-[45%] top-4" />
+      <MdOutlineDeveloperMode className="w-12 md:w-16 h-12 md:h-16 text-blue-900 relative left-[45%] top-4" />
     ),
   },
   {
     title: "System Analysis & UX/UI Design",
     desc: "User-centric design with distinctive brand identity and favorable impression driven by usability, scalability, and reliability.",
     icon: (
-      <SiAltiumdesigner className="w-12 md:w-16 h-12 md:h-16 text-red-500 relative left-[45%] lg:left-[44%] top-4" />
+      <SiAltiumdesigner className="w-12 md:w-16 h-12 md:h-16 text-blue-900 relative left-[45%] lg:left-[44%] top-4" />
     ),
   },
   {
     title: "Software Testing & Quality Assurance",
     desc: "Testing and QA Services backed by a robust heritage of testing proficiency and recommended for extensive variety of testing services array and excellence of resources.",
     icon: (
-      <SiMicrosoftsharepoint className="w-12 md:w-16 h-12 md:h-16 text-red-500 relative left-[45%] lg:left-[44%] top-4" />
+      <SiMicrosoftsharepoint className="w-12 md:w-16 h-12 md:h-16 text-blue-900 relative left-[45%] lg:left-[44%] top-4" />
     ),
   },
 ];

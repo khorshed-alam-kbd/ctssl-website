@@ -26,18 +26,6 @@ const Footer = () => {
               </h1> */}
             </div>
             <div className="flex items-center gap-2 my-1 ">
-              <FaMapMarkedAlt className="" />
-              <p className="text-sm font-semibold text-blue-900">
-                House: 1/3, Block: B, Lalmatia, Dhaka.
-              </p>
-            </div>
-            <div className="flex items-center gap-2 my-1">
-              <FaEnvelope className="" />
-              <p className="text-sm font-semibold text-blue-900">
-                comtechsbd@gmail.com
-              </p>
-            </div>
-            <div className="flex items-center gap-2 my-1 ">
               <FaPhoneAlt className="" />
               <div>
                 <p className="text-sm font-semibold text-blue-900">
@@ -48,6 +36,21 @@ const Footer = () => {
                 </p>
               </div>
             </div>
+            
+            <div className="flex items-center gap-2 my-1">
+              <FaEnvelope className="" />
+              <p className="text-sm font-semibold text-blue-900">
+                comtechsbd@gmail.com
+              </p>
+            </div>
+
+            <div className="flex items-center gap-2 my-1 ">
+              <FaMapMarkedAlt className="" />
+              <p className="text-sm font-semibold text-blue-900">
+                House: 1/3, Block: B, Lalmatia, <br></br> Dhaka, Bangladesh.
+              </p>
+            </div>
+            
 
             {/* <div className="lg:flex gap-5 mt-4 hidden">
               <a href="" target="_blank" rel="noopener noreferrer">

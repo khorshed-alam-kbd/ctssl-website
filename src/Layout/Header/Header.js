@@ -123,32 +123,32 @@ const Header = () => {
               <ul className="text-blue-950 font-semibold gap-3 ">
                 <li>
                   {" "}
-                  <Link to="/" className="pb-2 px-4 mb-2">
+                  <Link to="/" className="pb-2 px-4 mb-2" onClick={handleButtonClick}>
                     HOME
                   </Link>
                 </li>
                 <li>
                   {" "}
-                  <Link to="/services" className="pb-2 px-4 mb-2">
+                  <Link to="/services" className="pb-2 px-4 mb-2" onClick={handleButtonClick}>
                     SERVICES
                   </Link>
                 </li>
                 <li>
                   {" "}
-                  <Link to="/clients" className="pb-2 px-4 mb-2">
+                  <Link to="/clients" className="pb-2 px-4 mb-2" onClick={handleButtonClick}>
                     CLIENTS
                   </Link>
                 </li>
                 <li>
                   {" "}
-                  <Link to="/about-us" className="pb-2 px-4 mb-2">
+                  <Link to="/about-us" className="pb-2 px-4 mb-2" onClick={handleButtonClick}>
                     ABOUT US
                   </Link>
                 </li>
                 {/* < li > <Link to='/training' className='pb-2 px-4 mb-2'>TRANING</Link></li> */}
                 <li>
                   {" "}
-                  <Link to="/contact-us" className="pb-2 px-4 mb-2">
+                  <Link to="/contact-us" className="pb-2 px-4 mb-2" onClick={handleButtonClick}>
                     CONTACT US
                   </Link>
                 </li>
