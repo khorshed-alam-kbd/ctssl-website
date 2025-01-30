@@ -36,7 +36,7 @@ const HomeBanner = () => {
           >
             <img
               src={slide}
-              className="w-full max-h-[700px] object-cover"
+              className="w-full h-full object-cover"
               alt={`Slide ${index + 1}`}
             />
           </div>

@@ -175,6 +175,17 @@ const Header = () => {
                     CLIENTS
                   </Link>
                 </li>
+                <li>
+                  {" "}
+                  <Link
+                    onClick={() =>
+                      window.open("/company_profile.pdf", "_blank")
+                    }
+                    className="pb-2 px-4 mb-2"
+                  >
+                    COMPANY PROFILE
+                  </Link>
+                </li>
 
                 {/* < li > <Link to='/training' className='pb-2 px-4 mb-2'>TRANING</Link></li> */}
                 <li>
