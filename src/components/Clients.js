@@ -1,8 +1,103 @@
 import React, { useState } from "react";
 import Provati from "../Assets/photos/insurance/Provati.png";
 
+import amana from "../Assets/photos/client-img/amana-logo.png";
+import alfamed from "../Assets/photos/client-img/alfamed.png";
+import salman from "../Assets/photos/client-img/salman.png";
+import software from "../Assets/photos/client-img/software.png";
+import johura from "../Assets/photos/client-img/johura-bd.png";
+import pixel from "../Assets/photos/client-img/pixel.png";
+import electra from "../Assets/photos/client-img/electra.png";
+
 const Clients = () => {
-  const [activeTab, setActiveTab] = useState("education");
+  const [activeTab, setActiveTab] = useState("all");
+
+  const allData = [
+    {
+      img: salman,
+      title: "Salman Hajj Group",
+    },
+    {
+      img: amana,
+      title: "Amana Group",
+    },
+    {
+      img: software,
+      title: "Sony & Joy Telecom",
+    },
+    {
+      img: pixel,
+      title: "Pixel GraphicsBD",
+    },
+    {
+      img: johura,
+      title: "Johura Endomed Solution",
+    },
+    {
+      img: alfamed,
+      title: "Alfamed Solution",
+    },
+    {
+      img: software,
+      title: "AgronomyBD",
+    },
+    {
+      img: "https://upload.wikimedia.org/wikipedia/en/b/b7/Dhaka_Dental_College_logo.png",
+      title: "Dhaka Dental College",
+    },
+    {
+      img: "https://seeklogo.com/images/B/bangladesh-medical-college-hospital-zone-logo-E75429DD14-seeklogo.com.png",
+      title: "Bangladesh Medical College & Hospital",
+    },
+    {
+      img: "https://play-lh.googleusercontent.com/uDTnyyJ8KeilvsHLVHOzLgOI0dM0fTzRTb_-7OyTV07leyK_L3aOuGp5-pHsZd96Lypu",
+      title: "Comilla Residential College",
+    },
+    {
+      img: "https://cdn.dribbble.com/users/393931/screenshots/6436241/softwhere-dribbble_4x.png?compress=1&resize=400x300&vertical=top",
+      title: "Development Project Lalmatia",
+    },
+    {
+      img: "https://static1.eyellowpages.ph/uploads/yp_business/photo/179950/normal_1539843750-pioneer.png",
+      title: "Pioneer Insurance Company Limited",
+    },
+    {
+      img: Provati,
+      title: "Provati Insurance Company Limited",
+    },
+    {
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsEfEiDzj4MYOOZ1wxx6W7n5iAhdKsSAgjMQ&s",
+      title: "Prime Insurance Company Limited",
+    },
+    {
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQODmvRS-wdC_dhpwt6XRA91Gnboj4HXUb7Eg&s",
+      title: "City Insurance Company Limited",
+    },
+    {
+      img: "https://hotjobs.bdjobs.com/jobs/ricl/ruplai-header.jpg",
+      title: "Rupali Insurance Company Limited",
+    },
+    {
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwecYcwIIngiqYOcWu4414YwwNvqbawahQdw&s",
+      title: "Asia Insurance Company Limited",
+    },
+    {
+      img: "https://gomatihospital.com/wp-content/uploads/2022/08/LogoTransparent.png",
+      title: "Gomti Hospital (Pvt.) Ltd.",
+    },
+    {
+      img: "https://seeklogo.com/images/B/bangladesh-medical-college-hospital-zone-logo-E75429DD14-seeklogo.com.png",
+      title: "Bangladesh Medical College & Hospital",
+    },
+    {
+      img: "https://cdn.dribbble.com/users/393931/screenshots/6436241/softwhere-dribbble_4x.png?compress=1&resize=400x300&vertical=top",
+      title: "Development Project Dhanmondi",
+    },
+    {
+      img: "https://cdn.dribbble.com/users/393931/screenshots/6436241/softwhere-dribbble_4x.png?compress=1&resize=400x300&vertical=top",
+      title: "Development Project Lalmatia",
+    },
+  ];
 
   const educationData = [
     {
@@ -68,6 +163,40 @@ const Clients = () => {
       title: "Development Project Lalmatia",
     },
   ];
+  const othersData = [
+    {
+      img: salman,
+      title: "Salman Hajj Group",
+    },
+    {
+      img: amana,
+      title: "Amana Group",
+    },
+    {
+      img: software,
+      title: "Sony & Joy Telecom",
+    },
+    {
+      img: pixel,
+      title: "Pixel GraphicsBD",
+    },
+    {
+      img: johura,
+      title: "Johura Endomed Solution",
+    },
+    {
+      img: alfamed,
+      title: "Alfamed Solution",
+    },
+    {
+      img: software,
+      title: "AgronomyBD",
+    },
+    {
+      img: electra,
+      title: "Electra International Limited",
+    },
+  ];
 
   const TabContent = ({ data }) => {
     return (
@@ -77,7 +206,11 @@ const Clients = () => {
             key={index}
             className="lg:flex items-center justify-start rounded gap-10 bg-white border p-5"
           >
-            <img className="h-20" src={item.img} alt={item.title} />
+            <img
+              className="h-20"
+              src={item.img}
+              alt={item.title}
+            />
             <p className="font-bold">{item.title}</p>
           </div>
         ))}
@@ -92,12 +225,26 @@ const Clients = () => {
       return <TabContent data={insuranceData} />;
     } else if (activeTab === "hospital") {
       return <TabContent data={hospitalData} />;
+    } else if (activeTab === "others") {
+      return <TabContent data={othersData} />;
+    } else if (activeTab === "all") {
+      return <TabContent data={allData} />;
     }
   };
 
   return (
     <div className="max-w-7xl px-5">
       <div className="flex flex-col lg:flex-row items-center justify-center gap-5">
+        <div
+          className={`cursor-pointer py-2 w-[200px] border rounded ${
+            activeTab === "all"
+              ? "bg-base-100 border border-blue-700"
+              : "bg-base-300 text-gray-400"
+          }`}
+          onClick={() => setActiveTab("all")}
+        >
+          <h1 className="text-xl text-center font-bold uppercase">ALL</h1>
+        </div>
         <div
           className={`cursor-pointer py-2 w-[200px] border rounded ${
             activeTab === "education"
@@ -127,6 +274,16 @@ const Clients = () => {
           onClick={() => setActiveTab("hospital")}
         >
           <h1 className="text-xl text-center font-bold uppercase">hospital</h1>
+        </div>
+        <div
+          className={`cursor-pointer py-2 w-[200px] border rounded ${
+            activeTab === "others"
+              ? "bg-base-100 border border-blue-700"
+              : "bg-base-300 text-gray-400"
+          }`}
+          onClick={() => setActiveTab("others")}
+        >
+          <h1 className="text-xl text-center font-bold uppercase">Others</h1>
         </div>
       </div>
 

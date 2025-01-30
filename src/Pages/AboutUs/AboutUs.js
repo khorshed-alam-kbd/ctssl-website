@@ -1,19 +1,15 @@
 import React from "react";
-import {
-  FaGlobe,
-  FaGithub,
-  FaLinkedinIn,
-  FaFacebook,
-  FaBullseye,
-  FaEye,
-  FaLightbulb,
-} from "react-icons/fa";
+import { FaBullseye, FaEye, FaLightbulb } from "react-icons/fa";
 import TeamMember from "../../components/TeamMember";
+
+import missionImg from "../../Assets/photos/about-us/mission.jpg";
+import visionImg from "../../Assets/photos/about-us/vision.jpg";
+import objectiveImg from "../../Assets/photos/about-us/objective.jpg";
 
 const contentData = [
   {
     title: "Our Mission",
-    img: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c29mdHdhcmUlMjBjb21wYW55fGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+    img: missionImg,
     desc: "Exceed client's expectations by going beyond software to provide best Web solutions that transform data into knowledge, enabling them to solve their problems.",
     icon: (
       <FaBullseye className="w-12 h-12 rounded-full p-2 text-white bg-blue-500 relative left-[44%] bottom-6" />
@@ -21,7 +17,7 @@ const contentData = [
   },
   {
     title: "Our Vision",
-    img: "https://www.saveetha.ac.in/images/sec/2020/content/vision01.jpg",
+    img: visionImg,
     desc: "A software product vision statement is the overall objective you are aiming for, your reasons for creating your software product. It provides a known direction.",
     icon: (
       <FaEye className="w-12 h-12 rounded-full p-2 text-white bg-blue-500 relative left-[44%] bottom-6" />
@@ -29,7 +25,7 @@ const contentData = [
   },
   {
     title: "Our Objective",
-    img: "https://img.freepik.com/premium-photo/developing-programmer-development-website-design-coding-technologies-working-software-company-office_18497-1234.jpg?w=2000",
+    img: objectiveImg,
     desc: "The primary objective of software engineering is to create dependable and effective software. The objective of software engineering is to produce high-quality software.",
     icon: (
       <FaLightbulb className="w-12 h-12 rounded-full p-2 text-white bg-blue-500 relative left-[44%] bottom-6" />
@@ -70,7 +66,7 @@ const AboutUs = () => {
                   <img
                     src={content.img}
                     alt={content.title}
-                    className="rounded-t-xl"
+                    className="rounded-t-xl w-full h-[200px]"
                   />
                   <span className="">{content.icon}</span>
                 </figure>

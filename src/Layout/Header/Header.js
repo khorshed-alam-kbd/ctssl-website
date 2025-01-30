@@ -42,7 +42,11 @@ const Header = () => {
 
       <nav className="bg-white ">
         <div className="navbar mx-auto  max-w-6xl ">
-          <img className="h-10 hidden lg:flex " src={img} alt="" />
+          <img
+            className="h-10 hidden lg:flex "
+            src={img}
+            alt=""
+          />
 
           <div className=" navbar-center hidden lg:flex mx-auto">
             <ul className="flex items-center text-blue-950 font-semibold gap-3">
@@ -55,6 +59,17 @@ const Header = () => {
                   }`}
                 >
                   HOME
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link
+                  to="/about-us"
+                  className={`hover:border-b-2  hover:border-blue-700 pb-2 px-4 mx-2 ${
+                    pathname === "/about-us" ? "border-b-2 border-blue-700" : ""
+                  }`}
+                >
+                  ABOUT US
                 </Link>
               </li>
               <li>
@@ -82,14 +97,13 @@ const Header = () => {
               <li>
                 {" "}
                 <Link
-                  to="/about-us"
-                  className={`hover:border-b-2  hover:border-blue-700 pb-2 px-4 mx-2 ${
-                    pathname === "/about-us" ? "border-b-2 border-blue-700" : ""
-                  }`}
+                  onClick={() => window.open("/company_profile.pdf", "_blank")}
+                  className={`hover:border-b-2  hover:border-blue-700 pb-2 px-4 mx-2 `}
                 >
-                  ABOUT US
+                  COMPANY PROFILE
                 </Link>
               </li>
+
               {/* < li > <Link to='/training' className={`hover:border-b-2  hover:border-blue-700 pb-2 px-4 mx-2 ${pathname === '/training' ? "border-b-2 border-blue-700" : ""}`}>TRANING</Link></li> */}
               {/* <li>
                 {" "}
@@ -116,39 +130,59 @@ const Header = () => {
             </div>
 
             <div className={!isButtonClicked ? "lg:hidden" : "hidden"}>
-              <img className="h-7" src={img} alt="" />
+              <img
+                className="h-7"
+                src={img}
+                alt=""
+              />
             </div>
 
             <div className={isButtonClicked ? "lg:hidden w-[400px]" : "hidden"}>
               <ul className="text-blue-950 font-semibold gap-3 ">
                 <li>
-                  {" "}
-                  <Link to="/" className="pb-2 px-4 mb-2" onClick={handleButtonClick}>
+                  <Link
+                    to="/"
+                    className="pb-2 px-4 mb-2"
+                    onClick={handleButtonClick}
+                  >
                     HOME
                   </Link>
                 </li>
                 <li>
-                  {" "}
-                  <Link to="/services" className="pb-2 px-4 mb-2" onClick={handleButtonClick}>
+                  <Link
+                    to="/about-us"
+                    className="pb-2 px-4 mb-2"
+                    onClick={handleButtonClick}
+                  >
+                    ABOUT US
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services"
+                    className="pb-2 px-4 mb-2"
+                    onClick={handleButtonClick}
+                  >
                     SERVICES
                   </Link>
                 </li>
                 <li>
-                  {" "}
-                  <Link to="/clients" className="pb-2 px-4 mb-2" onClick={handleButtonClick}>
+                  <Link
+                    to="/clients"
+                    className="pb-2 px-4 mb-2"
+                    onClick={handleButtonClick}
+                  >
                     CLIENTS
                   </Link>
                 </li>
-                <li>
-                  {" "}
-                  <Link to="/about-us" className="pb-2 px-4 mb-2" onClick={handleButtonClick}>
-                    ABOUT US
-                  </Link>
-                </li>
+
                 {/* < li > <Link to='/training' className='pb-2 px-4 mb-2'>TRANING</Link></li> */}
                 <li>
-                  {" "}
-                  <Link to="/contact-us" className="pb-2 px-4 mb-2" onClick={handleButtonClick}>
+                  <Link
+                    to="/contact-us"
+                    className="pb-2 px-4 mb-2"
+                    onClick={handleButtonClick}
+                  >
                     CONTACT US
                   </Link>
                 </li>
@@ -166,7 +200,10 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <Link to="/contact-us" className={`flex justify-end hidden lg:block`}>
+          <Link
+            to="/contact-us"
+            className={`flex justify-end hidden lg:block`}
+          >
             <button className="btn btn-sm btn-outline">Contact Us</button>
           </Link>
         </div>

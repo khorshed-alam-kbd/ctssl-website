@@ -2,7 +2,10 @@ import React from "react";
 import "aos/dist/aos.css"; // Import AOS styles if not already imported
 
 const Step = ({ content, label }) => (
-  <li data-content={content} className="step text-xl font-bold">
+  <li
+    data-content={content}
+    className="step text-xl font-bold"
+  >
     {label}
   </li>
 );
@@ -15,12 +18,30 @@ const WorkingProcess = () => (
     data-aos-duration="3000"
   >
     <ul className="steps steps-vertical lg:steps-horizontal lg:w-full">
-      <Step content="?" label="Meeting" />
-      <Step content="!" label="Planning" />
-      <Step content="★" label="Designing" />
-      <Step content="?" label="Developing" />
-      <Step content="✓" label="Testing" />
-      <Step content="●" label="Delivery" />
+      <Step
+        content="?"
+        label="Meeting"
+      />
+      <Step
+        content="!"
+        label="Planning"
+      />
+      <Step
+        content="★"
+        label="Designing"
+      />
+      <Step
+        content="?"
+        label="Developing"
+      />
+      <Step
+        content="✓"
+        label="Testing"
+      />
+      <Step
+        content="●"
+        label="Delivery"
+      />
     </ul>
   </div>
 );

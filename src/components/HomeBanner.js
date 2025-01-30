@@ -24,16 +24,19 @@ const HomeBanner = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[450px]">
+    <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[700px]">
       <div
         className="absolute top-0 left-0 w-full h-full flex transition-transform duration-1000"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
         {slides.map((slide, index) => (
-          <div key={index} className="w-full flex-shrink-0">
+          <div
+            key={index}
+            className="w-full flex-shrink-0"
+          >
             <img
               src={slide}
-              className="w-full h-full object-cover"
+              className="w-full max-h-[700px] object-cover"
               alt={`Slide ${index + 1}`}
             />
           </div>

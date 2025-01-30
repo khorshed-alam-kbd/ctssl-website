@@ -2,7 +2,7 @@ import React from "react";
 
 const services = [
   {
-    title: "WEB APP DESIGN",
+    title: "WEB APP DESIGN & DEVELOPMEN",
     description:
       "We help design the latest portal technology for your business. We also use the right portal services to effectively steer your brand in the right direction that will help you actualize your business goals. From initial planning to the implementation of products, Comtech Software Solution offers one-stop solution for all your portal needs. We have an enviable reputation of delivering professional portal projects to organizations of different sizes.",
     image:
@@ -40,13 +40,16 @@ const WebDev = () => {
           className={`grid grid-cols-1 lg:grid-cols-2 p-12 justify-center items-center gap-10 ${service.bgColor}`}
         >
           <div className={`${index % 2 !== 0 ? "lg:order-last" : ""}`}>
-            <h1 className="text-orange-500 font-bold text-xl lg:text-2xl mb-4 text-center lg:text-left">
+            <h1 className="text-blue-800 font-bold text-xl lg:text-2xl mb-4 text-center lg:text-left">
               {service.title}
             </h1>
             <p className="lg:text-xl text-justify">{service.description}</p>
           </div>
           <div className="flex justify-center items-center">
-            <img src={service.image} alt={service.title} />
+            <img
+              src={service.image}
+              alt={service.title}
+            />
           </div>
         </div>
       ))}

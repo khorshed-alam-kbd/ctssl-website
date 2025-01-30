@@ -5,18 +5,46 @@ import KaImg from "../Assets/photos/team-member/khorshed-photo.jpg";
 import AlImg from "../Assets/photos/team-member/alamin.png";
 import BUImg from "../Assets/photos/team-member/borhan.png";
 import MUImg from "../Assets/photos/team-member/mayin.png";
+import OsmanImg from "../Assets/photos/team-member/osman.jpg";
+import AlaminImg from "../Assets/photos/team-member/alamin-new.jpg";
 import userImg from "../Assets/photos/team-member/user-male.png";
 import userFeImg from "../Assets/photos/team-member/user-female.png";
 
 const teamMembers = [
+  // {
+  //   name: "Fahad Bin Bashar",
+  //   role: "Senior Software Engineer",
+  //   description:
+  //     "Overseeing all technology operations and evaluating them according to the goals.",
+  //   image: FBBImg,
+  //   socialLinks: {
+  //     globe: "https://www.facebook.com/fahadbinbashar",
+  //     github: "#",
+  //     linkedin: "#",
+  //     facebook: "#",
+  //   },
+  // },
   {
-    name: "Fahad Bin Bashar",
-    role: "Senior Software Engineer",
+    name: "Osman Ghoni",
+    role: "Sr. Software Developer",
     description:
       "Overseeing all technology operations and evaluating them according to the goals.",
-    image: FBBImg,
+    image: OsmanImg,
     socialLinks: {
-      globe: "https://www.facebook.com/fahadbinbashar",
+      globe: "#",
+      github: "#",
+      linkedin: "#",
+      facebook: "#",
+    },
+  },
+  {
+    name: "Md Mayin Uddin",
+    role: "Application Developer",
+    description:
+      "Overseeing all technology operations and evaluating them according to the goals.",
+    image: MUImg,
+    socialLinks: {
+      globe: "#",
       github: "#",
       linkedin: "#",
       facebook: "#",
@@ -35,22 +63,9 @@ const teamMembers = [
       facebook: "#",
     },
   },
-  {
-    name: "Md Mayin Uddin",
-    role: "Web & App Developer",
-    description:
-      "Overseeing all technology operations and evaluating them according to the goals.",
-    image: MUImg,
-    socialLinks: {
-      globe: "#",
-      github: "#",
-      linkedin: "#",
-      facebook: "#",
-    },
-  },
 
   {
-    name: "Alamin",
+    name: "Al Amin",
     role: "Full Stack Developer",
     description:
       "Overseeing all technology operations and evaluating them according to the goals.",
@@ -64,7 +79,7 @@ const teamMembers = [
   },
   {
     name: "Md Khorshed Alam",
-    role: "Jr. Software Developer",
+    role: "Full Stack Developer",
     description:
       "Overseeing all the React.js technology operations and evaluating them according to the goals.",
     image: KaImg,
@@ -76,11 +91,11 @@ const teamMembers = [
     },
   },
   {
-    name: "Sporsho Ahmed",
+    name: "Md Al-amin",
     role: "Front End developer",
     description:
       "Overseeing all technology operations and evaluating them according to the goals.",
-    image: userImg,
+    image: AlaminImg,
     socialLinks: {
       globe: "#",
       github: "#",
@@ -101,19 +116,19 @@ const teamMembers = [
       facebook: "#",
     },
   },
-  {
-    name: "Tamanna Rahman",
-    role: "QA Engineer",
-    description:
-      "Overseeing all technology operations and evaluating them according to the goals.",
-    image: userFeImg,
-    socialLinks: {
-      globe: "#",
-      github: "#",
-      linkedin: "#",
-      facebook: "#",
-    },
-  },
+  // {
+  //   name: "Tamanna Rahman",
+  //   role: "QA Engineer",
+  //   description:
+  //     "Overseeing all technology operations and evaluating them according to the goals.",
+  //   image: userFeImg,
+  //   socialLinks: {
+  //     globe: "#",
+  //     github: "#",
+  //     linkedin: "#",
+  //     facebook: "#",
+  //   },
+  // },
   {
     name: "Taijul Islam",
     role: "UI/UX Designer",
@@ -127,34 +142,37 @@ const teamMembers = [
       facebook: "#",
     },
   },
-  {
-    name: "Aysha Khan",
-    role: "IT Executive",
-    description:
-      "Overseeing all technology operations and evaluating them according to the goals.",
-    image: userFeImg,
-    socialLinks: {
-      globe: "#",
-      github: "#",
-      linkedin: "#",
-      facebook: "#",
-    },
-  },
+  // {
+  //   name: "Aysha Khan",
+  //   role: "IT Executive",
+  //   description:
+  //     "Overseeing all technology operations and evaluating them according to the goals.",
+  //   image: userFeImg,
+  //   socialLinks: {
+  //     globe: "#",
+  //     github: "#",
+  //     linkedin: "#",
+  //     facebook: "#",
+  //   },
+  // },
 ];
 function TeamMember() {
   return (
     <div>
-      <div className="my-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5 px-5 lg:p-0">
+      <div className="my-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 px-5 lg:p-0">
         {teamMembers.map((member, index) => (
-          <div key={index} className="card card-compact bg-base-100 shadow-xl">
+          <div
+            key={index}
+            className="card card-compact bg-base-100 shadow-md rounded-md"
+          >
             <figure>
               <img
                 src={member.image}
-                className="w-full h-[200px]"
+                className="w-full h-[300px]"
                 alt={member.name}
               />
             </figure>
-            <div className="card-body">
+            <div className="card-body text-center">
               <h2 className="text-xl font-bold">{member.name}</h2>
               <p className="text-gray-600">{member.role}</p>
               {/* <p className='text-justify'>{member.description}</p> */}
